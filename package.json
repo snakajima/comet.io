@@ -1,14 +1,15 @@
 {
   "name": "comet.io",
-  "version": "0.0.1",
-  "description": "light-weight comet server+client",
+  "version": "0.0.3",
+  "description": "light-weight comet server & client",
   "main": "./lib/comet.io.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./test/server.js"
   },
-  "repository": "",
+  "repository": "https://github.com/snakajima/comet.io",
   "keywords": [
     "comet",
+    "ajax",
     "push"
   ],
   "author": "Satoshi Nakajima <satoshi.nakajima@gmail.com>",

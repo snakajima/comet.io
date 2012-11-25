@@ -1,7 +1,7 @@
 comet.io
 ========
 
-Lightweight comet server/client for Node.js
+Lightweight comet server & client for Node.js
 
 Server
 ------

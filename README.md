@@ -6,6 +6,7 @@ Lightweight comet server/client for Node.js
 Server
 ------
 
+```js
 var app = require('http').createServer(handler);
 var file = new(require('node-static').Server)(__dirname + '/web', {});
 var comet = require('../lib/comet.io.js').createServer();
@@ -21,7 +22,6 @@ function handler(request, response) {
   });
 }
 
-
 comet.on('connection', function (socket) {
   // do something when a client has connected
   socket.emit('test.message', { something:'any json object here' });
@@ -30,11 +30,12 @@ comet.on('connection', function (socket) {
     // do something when it receives a message from client
   });
 });
-
+```
 
 Client
 ------
 
+```js
   socket = comet.connect();
   socket.on('connect', function() {
     // do something when it's connected for the first time
@@ -42,3 +43,4 @@ Client
     // do something, such as sending an message to the server
     socket.emit('test.response', { something:'any json object' });
   });
+```

@@ -1,6 +1,6 @@
 {
   "name": "comet.io",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "light-weight comet server & client",
   "main": "./lib/comet.io.js",
   "scripts": {
